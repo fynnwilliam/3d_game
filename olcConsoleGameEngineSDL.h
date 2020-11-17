@@ -142,13 +142,14 @@ http://www.twitch.tv/javidx9
 
 #pragma once
 
+/*
 #ifndef UNICODE
 #error Please enable UNICODE for your compiler! VS: Project Properties -> General -> \
 Character Set -> Use Unicode. Thanks! For now, Ill try enabling it for you - Javidx9
 #define UNICODE
 #define _UNICODE
 #endif
-
+*/
 #define __STDC_LIB_EXT1__
 #define __STDC_WANT_LIB_EXT1__ 1
 #define _CRT_SECURE_NO_WARNINGS
@@ -287,7 +288,7 @@ public:
 		Create(w, h);
 	}
 
-	olcSprite(std::wstring sFile)
+	olcSprite(std::string sFile)
 	{
 		if (!Load(sFile))
 			Create(8, 8);
