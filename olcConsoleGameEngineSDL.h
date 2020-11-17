@@ -372,7 +372,7 @@ public:
 			return m_Colours[sy * nWidth + sx];
 	}
 
-	bool Save(std::wstring sFile)
+	bool Save(std::string sFile)
 	{
 		std::string path(sFile.begin(), sFile.end());
 
@@ -394,7 +394,7 @@ public:
 		return true;
 	}
 
-	bool Load(std::wstring sFile)
+	bool Load(std::string sFile)
 	{
 		delete[] m_Glyphs;
 		delete[] m_Colours;
